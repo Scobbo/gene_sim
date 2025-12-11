@@ -1,0 +1,19 @@
+[project]
+name = "gene-sim"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Robert Coleman", email = "robert.coleman@minivoid.net" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pygame-ce>=2.5.6",
+]
+
+[project.scripts]
+gene-sim = "gene_sim:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
