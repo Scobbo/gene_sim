@@ -1,0 +1,289 @@
+19:28:55.864 - sim - INFO - Ecosystem Simulation v0.0.1
+19:28:55.864 - sim - INFO - Setting up simulation
+19:28:55.864 - sim - INFO - Initialising pygame
+19:28:56.194 - sim - INFO - Screen size set to 1280 x 720
+19:28:56.194 - sim - DEBUG - Randomising Genome
+19:28:56.195 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.195 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.195 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.195 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.195 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.195 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.196 - sim - DEBUG - Randomising Genome
+19:28:56.196 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.196 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.196 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.197 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.197 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.197 - sim - DEBUG - Itterating through Chromosomes
+19:28:56.197 - sim - INFO - Animal created.
+19:28:56.197 - sim - INFO - Active gene is: [2.405056707058045, 1.227055855581947, 3.0336517729885384, 7.315935759351891, 9.282866453336517, 7.396609267470881, 5.621129002959439, 2.835193498111113, 5.389915147900162, 7.6835872201853315, 9.320805755423487, 2.265397575744504, 7.200330076711901, 7.962012104569569, 5.9231995964968736, 5.862107087049561, 2.1901611068579725, 1.113767590033018, 2.5385745100830466, 6.481676471168253, 3.082590435527852, 3.151397092547224, 2.1919949077726835, 8.560132803609687, 2.016371881843579, 5.279963523758305, 7.58755455640468, 5.99538002073235, 2.946741973053501, 3.356483196853186]
+19:28:56.197 - sim - DEBUG - Height: 97.20992466409936
+19:28:56.198 - sim - DEBUG - Width: 105.09922308918463
+19:28:56.198 - sim - DEBUG - Colour: 97.14430746701139, 133.08930446083224, 161.94996425666267
+19:28:56.198 - sim - ERROR - Simulation crashed with error: invalid rectstyle object
+Traceback (most recent call last):
+  File "C:\Users\scobb\OneDrive\Projects\Code\gene_sim\src\gene_sim\main.py", line 9, in main
+    sim = Sim()
+  File "C:\Users\scobb\OneDrive\Projects\Code\gene_sim\src\gene_sim\sim_logic.py", line 26, in __init__
+    self.start_sim()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\scobb\OneDrive\Projects\Code\gene_sim\src\gene_sim\sim_logic.py", line 54, in start_sim
+    newAnimal.express()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\scobb\OneDrive\Projects\Code\gene_sim\src\gene_sim\includes\entities.py", line 59, in express
+    self.image.fill(int(self.red), int(self.green), int(self.blue))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid rectstyle object
+19:29:20.970 - sim - INFO - Ecosystem Simulation v0.0.1
+19:29:20.970 - sim - INFO - Setting up simulation
+19:29:20.970 - sim - INFO - Initialising pygame
+19:29:21.240 - sim - INFO - Screen size set to 1280 x 720
+19:29:21.240 - sim - DEBUG - Randomising Genome
+19:29:21.240 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.240 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.241 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.241 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.241 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.241 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.241 - sim - DEBUG - Randomising Genome
+19:29:21.241 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.241 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.242 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.242 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.242 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.242 - sim - DEBUG - Itterating through Chromosomes
+19:29:21.242 - sim - INFO - Animal created.
+19:29:21.242 - sim - INFO - Active gene is: [9.359636444966007, 4.897506555967734, 4.488249455200719, 6.51494025748937, 2.414254232486276, 7.274163704343704, 9.744365570824948, 2.3384881904045454, 9.481555891765462, 7.033141714063961, 3.5401977407363283, 4.7494013440222975, 3.3366486641185626, 5.352624338146494, 4.771915597959653, 2.783346499629215, 3.9177166164676516, 5.9357476591021685, 4.283349206035637, 3.5124226598449786, 6.439666193043471, 1.825168444550573, 3.912713058349876, 9.646000039917501, 1.1252460942419842, 2.256157166410158, 5.58854055407863, 4.69726780104761, 5.5679377643258485, 9.598579116403762]
+19:29:21.243 - sim - DEBUG - Height: 158.74576702455377
+19:29:21.243 - sim - DEBUG - Width: 73.1176078845401
+19:29:21.243 - sim - DEBUG - Colour: 138.83266429593465, 172.89629402929194, 93.89735566983494
+19:29:24.396 - sim - DEBUG - Randomising Genome
+19:29:24.396 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.396 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.397 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.397 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.397 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.397 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.397 - sim - DEBUG - Randomising Genome
+19:29:24.397 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.397 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.397 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.397 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.398 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.398 - sim - DEBUG - Itterating through Chromosomes
+19:29:24.398 - sim - INFO - Animal created.
+19:29:24.398 - sim - INFO - Active gene is: [1.650842991542435, 1.6720977674355533, 7.939545944257895, 3.3903927112334613, 6.978534316162112, 4.6349295238397765, 8.979857851550522, 6.087078383197071, 6.183574771061911, 2.4100209958064163, 2.1664479460034087, 8.037142397962572, 2.5735926393451396, 5.350376708768786, 7.83791563264323, 6.395069211850533, 7.767906497642904, 2.323682696370196, 8.104307694507407, 3.5051937411154097, 7.752341772452846, 4.043921729150112, 3.7564276886059345, 7.946767128514482, 7.211967647299816, 7.169283840307624, 5.801516578006211, 3.988940124271095, 4.758902022927009, 1.7534139073432535]
+19:29:24.398 - sim - DEBUG - Height: 50.412357027758965
+19:29:24.398 - sim - DEBUG - Width: 86.50632083597665
+19:29:24.398 - sim - DEBUG - Colour: 118.72144362944354, 169.248304225349, 137.13337842160539
+19:29:27.377 - sim - INFO - Ecosystem Simulation v0.0.1
+19:29:27.377 - sim - INFO - Setting up simulation
+19:29:27.377 - sim - INFO - Initialising pygame
+19:29:27.641 - sim - INFO - Screen size set to 1280 x 720
+19:29:27.641 - sim - DEBUG - Randomising Genome
+19:29:27.641 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.641 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.641 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.642 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.642 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.642 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.642 - sim - DEBUG - Randomising Genome
+19:29:27.642 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.642 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.642 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.643 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.643 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.643 - sim - DEBUG - Itterating through Chromosomes
+19:29:27.643 - sim - INFO - Animal created.
+19:29:27.643 - sim - INFO - Active gene is: [5.065599780582215, 2.0330171272543605, 3.926866778066148, 2.5566160062712773, 7.82768992521496, 4.272651222392528, 4.4535581411811425, 2.5245991218710864, 9.794311725978257, 7.758197534482985, 6.195389567398161, 6.602589006042498, 9.418494920936084, 9.927961593364538, 4.8203490217211495, 7.610043888422254, 5.6049077709499375, 5.200056689276771, 8.722031550545573, 6.264712579752255, 3.0609748439719433, 8.33476918168485, 2.0919706103065687, 5.763699159441465, 4.101084037642959, 4.02849377111803, 9.546078767751188, 5.509788287897438, 5.86146249621831, 2.3026969976138876]
+19:29:27.643 - sim - DEBUG - Height: 76.22215786853491
+19:29:27.644 - sim - DEBUG - Width: 98.60707052469321
+19:29:27.644 - sim - DEBUG - Colour: 85.2711260642753, 91.14200771265473, 107.5742087779777
+19:29:29.305 - sim - DEBUG - Randomising Genome
+19:29:29.305 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.305 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.305 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.305 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - DEBUG - Randomising Genome
+19:29:29.306 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - DEBUG - Itterating through Chromosomes
+19:29:29.306 - sim - INFO - Animal created.
+19:29:29.307 - sim - INFO - Active gene is: [5.697141576156761, 7.402246681729516, 3.444831691227887, 1.6570723642832252, 9.778778089121309, 3.8464044156513877, 8.560781795114579, 2.835244992027672, 9.598770276132838, 9.653599101592027, 9.026957081158992, 9.413273573747144, 1.9922641736721087, 8.794917027981066, 9.653500010627322, 2.750111211007298, 1.2497203685088016, 3.615064113925513, 1.1105189686856247, 2.3651796752992205, 9.380260819928276, 9.5820724333432, 8.945376741125902, 7.936820062172938, 9.739969671315718, 5.106446340507252, 4.630438422402449, 9.477461669018586, 6.488387326585653, 1.0388333827740905]
+19:29:29.307 - sim - DEBUG - Height: 73.54213940439986
+19:29:29.307 - sim - DEBUG - Width: 171.81024770850826
+19:29:29.307 - sim - DEBUG - Colour: 122.44568990507325, 113.85571542188077, 118.9257953786017
+19:29:30.665 - sim - INFO - Ecosystem Simulation v0.0.1
+19:29:30.665 - sim - INFO - Setting up simulation
+19:29:30.665 - sim - INFO - Initialising pygame
+19:29:30.931 - sim - INFO - Screen size set to 1280 x 720
+19:29:30.931 - sim - DEBUG - Randomising Genome
+19:29:30.931 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.931 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.931 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.932 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.932 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.932 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.932 - sim - DEBUG - Randomising Genome
+19:29:30.932 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.932 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.932 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.933 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.933 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.933 - sim - DEBUG - Itterating through Chromosomes
+19:29:30.933 - sim - INFO - Animal created.
+19:29:30.933 - sim - INFO - Active gene is: [1.567919533612646, 2.3929962689925732, 6.480136313554478, 9.516853553480646, 1.0262767147181466, 3.5785853744400424, 9.367460224045743, 1.411656042096769, 1.6420909167654054, 7.832700421677251, 6.6886536239495245, 4.266199261346398, 1.801525640091401, 5.4246928499622395, 2.8999910341992083, 6.289108895513269, 7.08779057108252, 8.921258190926238, 9.125461477837291, 2.1137851643166887, 7.731423984553675, 8.846641773330443, 4.691750949859727, 6.309621827791467, 4.622388755317914, 5.544295659933505, 9.934014970148842, 1.2262512090932869, 9.982245945398239, 9.014047966949464]
+19:29:30.933 - sim - DEBUG - Height: 110.8477308709329
+19:29:30.934 - sim - DEBUG - Width: 34.1927298371072
+19:29:30.934 - sim - DEBUG - Colour: 103.76431630822577, 211.3704174256739, 99.62321925246302
+19:29:32.355 - sim - DEBUG - Randomising Genome
+19:29:32.355 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.355 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.355 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.355 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.355 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.356 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.356 - sim - DEBUG - Randomising Genome
+19:29:32.356 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.356 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.356 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.356 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.356 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.356 - sim - DEBUG - Itterating through Chromosomes
+19:29:32.357 - sim - INFO - Animal created.
+19:29:32.357 - sim - INFO - Active gene is: [5.788678235227488, 8.277224021630392, 7.020296701257984, 2.9879478388242195, 8.441267848519683, 8.636655270940055, 5.545997547083589, 5.883071020487854, 3.392473657988887, 2.313430259452197, 3.9160885431935646, 7.041732492943908, 4.483185632903772, 7.461299936426885, 2.628476553160818, 1.4218221926602101, 6.040317322043318, 5.730792975378926, 1.4608731898038247, 9.825742368100615, 8.413088471669543, 5.128831250544003, 2.7427563633118526, 6.67239292541659, 4.664809673174439, 8.748769543487093, 2.0452042617089776, 2.3861206076579, 5.75979735788066, 9.553779218239141]
+19:29:32.357 - sim - DEBUG - Height: 87.76626074051707
+19:29:32.357 - sim - DEBUG - Width: 167.18491870150075
+19:29:32.357 - sim - DEBUG - Colour: 199.45146661523694, 129.61868405971495, 144.26905589859797
+19:29:33.966 - sim - INFO - Ecosystem Simulation v0.0.1
+19:29:33.966 - sim - INFO - Setting up simulation
+19:29:33.966 - sim - INFO - Initialising pygame
+19:29:34.231 - sim - INFO - Screen size set to 1280 x 720
+19:29:34.231 - sim - DEBUG - Randomising Genome
+19:29:34.232 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.232 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.232 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.232 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.232 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.232 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.232 - sim - DEBUG - Randomising Genome
+19:29:34.233 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.233 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.233 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.233 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.233 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.233 - sim - DEBUG - Itterating through Chromosomes
+19:29:34.233 - sim - INFO - Animal created.
+19:29:34.234 - sim - INFO - Active gene is: [4.290503044087123, 5.126606149477448, 9.760923693513252, 1.5755700811483728, 2.1773893550193364, 3.1610498185998157, 7.596087559163808, 4.573285117961285, 5.679335236504414, 2.0993815771527533, 2.5228652396675866, 6.6221941531174915, 8.280957887056495, 4.810214296240149, 2.4765407977826106, 5.632302706655807, 6.575704709873758, 9.295623043410178, 2.1173954963901482, 6.728646501055591, 5.015891501027741, 5.639485770235043, 8.079055314363824, 9.398363635031584, 1.7724885688100362, 5.379015494094217, 2.239807428066063, 6.157509931384463, 5.572690847681158, 2.996605139756096]
+19:29:34.234 - sim - DEBUG - Height: 58.66073125235495
+19:29:34.234 - sim - DEBUG - Width: 73.03995504496784
+19:29:34.234 - sim - DEBUG - Colour: 150.4048305132543, 157.77151111521192, 69.38537128440828
+19:29:38.257 - sim - DEBUG - Randomising Genome
+19:29:38.257 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.257 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.257 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.257 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.257 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.257 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.257 - sim - DEBUG - Randomising Genome
+19:29:38.257 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.258 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.258 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.258 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.258 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.258 - sim - DEBUG - Itterating through Chromosomes
+19:29:38.258 - sim - INFO - Animal created.
+19:29:38.258 - sim - INFO - Active gene is: [9.395756516336721, 5.5158660019984636, 1.8867900626397296, 9.818626058027736, 3.277695254562063, 1.4498294641051348, 2.5892071609351106, 9.560864879788127, 3.8943844071413096, 2.9894926098236563, 5.756417457926649, 4.779429570866022, 3.6448818229315885, 9.789248494641399, 7.981753842911376, 6.411770322686844, 4.113264959548355, 9.13227915967061, 7.141743750601633, 8.964372757063671, 1.3161233886092318, 2.1877302840549278, 5.692344147688158, 3.9948434764637746, 9.861897134139278, 2.916179359100705, 6.244165685182928, 9.581599947752624, 8.934599650121783, 4.455688071447826]
+19:29:38.258 - sim - DEBUG - Height: 192.14382574364458
+19:29:38.258 - sim - DEBUG - Width: 87.93561256560525
+19:29:38.259 - sim - DEBUG - Colour: 73.77071273952774, 119.12186068002146, 188.80988493648275
+19:29:39.561 - sim - INFO - Ecosystem Simulation v0.0.1
+19:29:39.561 - sim - INFO - Setting up simulation
+19:29:39.561 - sim - INFO - Initialising pygame
+19:29:39.835 - sim - INFO - Screen size set to 1280 x 720
+19:29:39.836 - sim - DEBUG - Randomising Genome
+19:29:39.836 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.836 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.836 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.836 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.836 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.837 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.837 - sim - DEBUG - Randomising Genome
+19:29:39.837 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.837 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.837 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.837 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.837 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.837 - sim - DEBUG - Itterating through Chromosomes
+19:29:39.838 - sim - INFO - Animal created.
+19:29:39.838 - sim - INFO - Active gene is: [7.350957057854296, 5.776421186726473, 6.647471489860735, 2.668880862916801, 2.8836125567346778, 5.0936004474299414, 3.2428809170496713, 5.711859187564828, 3.5407464490183544, 9.222759920977403, 5.989369465166936, 4.063144124902615, 4.190114729046707, 1.423838379534562, 3.5380031294960474, 4.504911911587401, 7.072234582501875, 4.711170549690232, 8.27578573034426, 2.4603794057700306, 3.6439597447140484, 4.1442725596973595, 4.903119033878532, 7.916434846681835, 3.161004059821163, 6.704154480937763, 3.7132805930766444, 5.273184098970985, 8.366979899725493, 5.7271803620630966]
+19:29:39.838 - sim - DEBUG - Height: 100.19837920771096
+19:29:39.838 - sim - DEBUG - Width: 86.6003374346115
+19:29:39.838 - sim - DEBUG - Colour: 145.97910936680958, 104.66027724856006, 93.86960506013588
+19:29:41.25 - sim - DEBUG - Randomising Genome
+19:29:41.26 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.26 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.26 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.26 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.26 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.26 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.26 - sim - DEBUG - Randomising Genome
+19:29:41.26 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.26 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.27 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.27 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.27 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.27 - sim - DEBUG - Itterating through Chromosomes
+19:29:41.27 - sim - INFO - Animal created.
+19:29:41.27 - sim - INFO - Active gene is: [5.499435152660544, 1.1021825080178562, 3.1278614180448647, 6.842020557438425, 9.583566538024412, 2.820202303380011, 3.5135612091133166, 3.7249056936827047, 8.819010116426467, 3.578440594664364, 1.6429818902106348, 9.551895391013902, 7.214282919942375, 6.7496365577022255, 8.20907508159449, 8.011224336974767, 9.276800134149147, 1.9188680301394798, 8.266921672417887, 3.0884281288126307, 2.1934960310735585, 5.692387485470463, 8.971529089028186, 5.3565797756294975, 7.611842802754666, 4.7804041100630315, 5.209544319432114, 4.434361634682558, 8.244685913611388, 6.186524361653619]
+19:29:41.27 - sim - DEBUG - Height: 123.4145571009897
+19:29:41.27 - sim - DEBUG - Width: 106.85749046042268
+19:29:41.27 - sim - DEBUG - Colour: 58.752051912022765, 112.36202653830505, 167.9207732428795
+19:29:42.446 - sim - INFO - Ecosystem Simulation v0.0.1
+19:29:42.446 - sim - INFO - Setting up simulation
+19:29:42.446 - sim - INFO - Initialising pygame
+19:29:42.711 - sim - INFO - Screen size set to 1280 x 720
+19:29:42.712 - sim - DEBUG - Randomising Genome
+19:29:42.712 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.712 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.712 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.712 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.712 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.713 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.713 - sim - DEBUG - Randomising Genome
+19:29:42.713 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.713 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.713 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.713 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.713 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.713 - sim - DEBUG - Itterating through Chromosomes
+19:29:42.714 - sim - INFO - Animal created.
+19:29:42.714 - sim - INFO - Active gene is: [1.5096745949293076, 5.661588534569684, 9.82525245362715, 9.764451349431898, 6.627185305627711, 5.374550686101997, 2.1047565880265804, 5.199881437712972, 9.457578159115306, 6.233388788767443, 8.607098001235563, 5.5051877739646, 1.8552523715951645, 5.891548100056926, 9.145365203418867, 6.819914267507044, 9.59898253384689, 5.435773460539828, 6.754458028010101, 5.283585783935697, 8.285745382218092, 4.521059266295963, 5.072090338431296, 3.379101453784624, 3.8111137890742333, 2.8741079597152295, 3.7214754164686537, 6.394368751035922, 5.983393061031376, 3.9096020428574896]
+19:29:42.714 - sim - DEBUG - Height: 112.74125944361205
+19:29:42.714 - sim - DEBUG - Width: 122.88773840197393
+19:29:42.714 - sim - DEBUG - Colour: 173.84493061915694, 180.78716992571356, 179.92931743977147
+19:29:43.801 - sim - DEBUG - Randomising Genome
+19:29:43.802 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.802 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.802 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.802 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.802 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.802 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.802 - sim - DEBUG - Randomising Genome
+19:29:43.802 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.803 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.803 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.803 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.803 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.803 - sim - DEBUG - Itterating through Chromosomes
+19:29:43.803 - sim - INFO - Animal created.
+19:29:43.803 - sim - INFO - Active gene is: [8.852362680605234, 6.621206636347277, 4.364556154936911, 7.48577131969847, 5.261339108098212, 5.69194284091183, 8.726501098233893, 1.1123757217316563, 6.174091048994202, 3.5179616119851165, 3.3413883869618153, 3.433147603171511, 6.307831530686304, 8.150971951586506, 4.342170337567463, 9.336302245745658, 8.25099425472705, 6.796240462994837, 8.69665393090863, 2.46872715677915, 8.626614908613341, 3.7478661638373385, 9.099729509669828, 4.084317958402899, 2.425424663461159, 1.8491437268123292, 7.668942948606337, 7.947547407622673, 4.8680799279060025, 3.4310984397303947]
+19:29:43.803 - sim - DEBUG - Height: 163.38134000303705
+19:29:43.804 - sim - DEBUG - Width: 118.82545744445488
+19:29:43.804 - sim - DEBUG - Colour: 138.98088026830013, 171.4735714405773, 115.49571791273614

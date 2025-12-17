@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-gene-sim = "gene_sim:main"
+gene-sim = "gene_sim.main:main"
 
 [build-system]
 requires = ["hatchling"]

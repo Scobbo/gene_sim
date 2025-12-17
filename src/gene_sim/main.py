@@ -3,7 +3,7 @@ import sys
 from .sim_logic import Sim
 from .includes.logger_conf import logger
 
-if __name__ == '__main__':
+def main():
     try:
         # Create an instance of the Sim class.
         sim = Sim()
@@ -14,3 +14,6 @@ if __name__ == '__main__':
     finally:
         pygame.quit()
         sys.exit()
+
+if __name__ == '__main__':
+    main()
