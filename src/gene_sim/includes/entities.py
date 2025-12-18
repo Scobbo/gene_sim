@@ -1,10 +1,10 @@
 import pygame
 from .logger_conf import logger
 from operator import itemgetter
-from .config import SCREEN_HEIGHT, SCREEN_WIDTH
+from random import randint
 
 class Animal(pygame.sprite.Sprite):
-    def __init__(self, groups, genome0, genome1):
+    def __init__(self, groups, pos, genome0, genome1):
         super().__init__(groups)
         # Full Genome
         self.genome0 = genome0
@@ -21,13 +21,25 @@ class Animal(pygame.sprite.Sprite):
         # Visual
         self.image = pygame.Surface((20, 20))
         self.image.fill((128, 128, 128))
-        self.rect = self.image.get_frect(center = (SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2))
+        self.rect = self.image.get_frect(center = pos)
     
     def select_genes(self):
         for i in range(len(self.genome0)):
             for k, l in zip(self.genome0[i], self.genome1[i]):
                 self.activeGene.append(max([k, l], key=itemgetter(1))[0])
-        logger.info(f"Active gene is: {self.activeGene}")
+
+    def select_chromosomes(self):
+        logger.debug("Choosing chromosomes to pass on")
+        chromosomeList = []
+        for i in range(len(self.genome0)):
+            selector = randint(0,1)
+            if selector == 0:
+                chromosomeList.append(self.genome0[i])
+                logger.debug("Selected from genome 0")
+            else:
+                chromosomeList.append(self.genome1[i])
+                logger.debug("Selected from genome 1")
+        return chromosomeList
 
     def gene_math(self):
         self.height = ((self.activeGene[0] + self.activeGene[3]) / 2) * 20

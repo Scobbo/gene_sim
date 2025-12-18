@@ -17,6 +17,15 @@ class Sim:
         pygame.display.set_caption(TITLE)
         logger.info(f"Screen size set to {SCREEN_WIDTH} x {SCREEN_HEIGHT}")
 
+        # Set up positions for animals
+        self.pos1 = (SCREEN_WIDTH / 4, SCREEN_HEIGHT / 3) # Top Left (Parent 1)
+        self.pos2 = ((SCREEN_WIDTH / 4) * 3, SCREEN_HEIGHT / 3) # Top Right (Parent 2)
+        self.pos3 = (SCREEN_WIDTH / 2, (SCREEN_HEIGHT / 3) * 2) # Bottom Center
+
+        self.mumAnimal = None
+        self.dadAnimal = None
+        self.childAnimal = None
+
         # Set up the app loop
         self.clock = pygame.time.Clock()
         self.running = True
@@ -27,9 +36,13 @@ class Sim:
         self.loop()
 
     def start_sim(self):
+        self.mumAnimal = self.make_Animal(self.pos1)
+        self.dadAnimal = self.make_Animal(self.pos2)
+        logger.debug(f"Animal 1 {self.mumAnimal}")
+        logger.debug(f"Animal 2 {self.dadAnimal}")
+
+    def make_Animal(self, pos):
         # Initializes the simulation world.
-        # Step 0: Clean up old sprites if restarting (Not needed yet, but future proofing).
-        allSprites.empty()
         # Make an animal
         self.chromosomeA0 = []
         self.chromosomeA1 = []
@@ -47,11 +60,23 @@ class Sim:
         self.genome1 = [self.chromosomeA1, self.chromosomeB1, self.chromosomeC1, self.chromosomeD1, self.chromosomeF1, self.chromosomeG1]
         rand_gene(self.genome0)
         rand_gene(self.genome1)
-        newAnimal = Animal((allSprites), self.genome0, self.genome1)
+        newAnimal = Animal((allSprites), pos, self.genome0, self.genome1)
         logger.info("Animal created.")
         newAnimal.select_genes()
         newAnimal.gene_math()
         newAnimal.express()
+        return newAnimal
+    
+    def procreate(self, mum, dad):
+        mumGenes = mum.select_chromosomes()
+        logger.debug(f"Mum's Genes: {mumGenes}")
+        dadGenes = dad.select_chromosomes()
+        logger.debug(f"Dad's Genes: {dadGenes}")
+        child = Animal((allSprites), self.pos3, mumGenes, dadGenes)
+        child.select_genes()
+        child.gene_math()
+        child.express()
+        return child
 
     def loop(self):
         # Main app loop.
@@ -66,6 +91,10 @@ class Sim:
         for event in pygame.event.get():
             if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
                 self.running = False
+            if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+                if self.childAnimal is not None:
+                    self.childAnimal.kill()
+                self.childAnimal = self.procreate(self.mumAnimal, self.dadAnimal)
     
     def update(self):
         # Update all entities (sprites).
