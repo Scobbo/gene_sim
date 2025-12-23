@@ -4,11 +4,11 @@ from operator import itemgetter
 from random import randint
 
 class Animal(pygame.sprite.Sprite):
-    def __init__(self, groups, pos, genome0, genome1):
+    def __init__(self, groups, pos, heplome0, heplome1):
         super().__init__(groups)
         # Full Genome
-        self.genome0 = genome0
-        self.genome1 = genome1
+        self.heplome0 = heplome0
+        self.heplome1 = heplome1
         self.activeGene = []
 
         # Attributes
@@ -24,21 +24,21 @@ class Animal(pygame.sprite.Sprite):
         self.rect = self.image.get_frect(center = pos)
     
     def select_genes(self):
-        for i in range(len(self.genome0)):
-            for k, l in zip(self.genome0[i], self.genome1[i]):
+        for i in range(len(self.heplome0)):
+            for k, l in zip(self.heplome0[i], self.heplome1[i]):
                 self.activeGene.append(max([k, l], key=itemgetter(1))[0])
 
     def select_chromosomes(self):
         logger.debug("Choosing chromosomes to pass on")
         chromosomeList = []
-        for i in range(len(self.genome0)):
+        for i in range(len(self.heplome0)):
             selector = randint(0,1)
             if selector == 0:
-                chromosomeList.append(self.genome0[i])
-                logger.debug("Selected from genome 0")
+                chromosomeList.append(self.heplome0[i])
+                logger.debug("Selected from heplome 0")
             else:
-                chromosomeList.append(self.genome1[i])
-                logger.debug("Selected from genome 1")
+                chromosomeList.append(self.heplome1[i])
+                logger.debug("Selected from heplome 1")
         return chromosomeList
 
     def gene_math(self):

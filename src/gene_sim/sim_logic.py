@@ -56,11 +56,11 @@ class Sim:
         self.chromosomeF1 = []
         self.chromosomeG0 = []
         self.chromosomeG1 = []
-        self.genome0 = [self.chromosomeA0, self.chromosomeB0, self.chromosomeC0, self.chromosomeD0, self.chromosomeF0, self.chromosomeG0]
-        self.genome1 = [self.chromosomeA1, self.chromosomeB1, self.chromosomeC1, self.chromosomeD1, self.chromosomeF1, self.chromosomeG1]
-        rand_gene(self.genome0)
-        rand_gene(self.genome1)
-        newAnimal = Animal((allSprites), pos, self.genome0, self.genome1)
+        self.heplome0 = [self.chromosomeA0, self.chromosomeB0, self.chromosomeC0, self.chromosomeD0, self.chromosomeF0, self.chromosomeG0]
+        self.heplome1 = [self.chromosomeA1, self.chromosomeB1, self.chromosomeC1, self.chromosomeD1, self.chromosomeF1, self.chromosomeG1]
+        rand_gene(self.heplome0)
+        rand_gene(self.heplome1)
+        newAnimal = Animal((allSprites), pos, self.heplome0, self.heplome1)
         logger.info("Animal created.")
         newAnimal.select_genes()
         newAnimal.gene_math()
