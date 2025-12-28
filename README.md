@@ -66,7 +66,3 @@ When a child is generated the software will itterate through both heplomes in bo
 ## Did I do it wrong?
 
 If you have a better handle on genetics or programming, please let me know via email, submitting a issue, or a pull request. Please explain in as much detail as you can. I'm happy to learn or answer any questions (if I am able).
-
-## License
-
-GPL or something. I'm not really concerned with licenses for this. Credit would be nice, but just keep the warning in mind.
